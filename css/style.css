@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../img/font/BebasNeue-webfont.eot');
+    src: url('../img/font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/font/BebasNeue-webfont.woff') format('woff'),
+         url('../img/font/BebasNeue-webfont.ttf') format('truetype'),
+         url('../img/font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 0.9em "Helvetica Neue", Helvetica, Arial, serif;
+	color: #272727;
+    background-image: url("../img/ecailles.png");
+}
+
+::selection, *::-moz-selection {
+	background: #272727;
+	color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+h1 {
+	font: 4em BebasNeueRegular, "HelveticaNeue-UltraLight", Impact, Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#minesweeper {
+    margin: 30px auto;
+}
+
+#minesweeper table {
+    margin: auto;
+}
+
+#minesweeper table tr td {
+    width: 20px;
+    height: 30px;
+}
+
+#lose {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 600px;
+}
