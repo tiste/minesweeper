@@ -30,8 +30,8 @@ class Minesweeper {
 			}
 		}
 
-		for ($i=1; $i<=10; $i++) {
-			$this->board[rand(1, 10)][rand(1, 10)]->value = -1;
+		for ($i=1; $i<=$this->nbCell; $i++) {
+			$this->board[rand(1, $this->nbCell)][rand(1, $this->nbCell)]->value = -1;
 		}
 	}
 
@@ -78,7 +78,7 @@ class Minesweeper {
 	}
 
 	function haveAdjacent($row, $col) {
-		if ($row>0 && $row<11 && $col>0 && $col<11 && !$this->boardVisited[$row][$col]) {
+		if ($row>0 && $row<=$this->nbCell && $col>0 && $col<=$this->nbCell && !$this->boardVisited[$row][$col]) {
 			$this->boardVisited[$row][$col] = true;
 			$nbBomb=0;
 
